@@ -1,7 +1,7 @@
 {
   "name": "code-arena",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend: Express & MySQL2 (run npm install inside backend/).\r Database: Use the code_arena schema.\r Login: Default port is 3000.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,5 +9,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoelectrot-cloud/code-arena.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thoelectrot-cloud/code-arena/issues"
+  },
+  "homepage": "https://github.com/thoelectrot-cloud/code-arena#readme"
 }
