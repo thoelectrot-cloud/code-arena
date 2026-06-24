@@ -1,7 +1,8 @@
 const express = require('express');
+const cors = require('cors'); // Require it first
+const app = express();        // Then initialize the app
 const db = require('./db');
-const app = express();
-
+app.use(cors());
 app.get('/api/quizzes', (req, res) => {
   const sql = 'SELECT * FROM quizzes';
   db.query(sql, (err, results) => {
